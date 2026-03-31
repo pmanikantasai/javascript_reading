@@ -3,8 +3,8 @@
 
 
  const user = {
-
     name : "manikantasai",
+    "fullName":"pallapu manikantasai",
     age : 23,
     email : "maniknatsai@gmail.com"
  }
@@ -20,5 +20,11 @@ user.greeting = function(){
     console.log("hello")
 }
 console.log(user.greeting())
+
+// console.log(user["fullName"])
+
+user.greeting2 = function(){
+    console.log(`hello ${this.name}`)
+}
 
 
