@@ -37,4 +37,4 @@
 // // console.log(n1Array); // after splice, n1Array will have the remaining elements
 // // console.log(n1Array.sort());// sort method - sorts the elements of an array in place and returns the sorted array
 
-console.log(names.isArray("mani"));
+
