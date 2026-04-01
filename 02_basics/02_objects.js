@@ -20,9 +20,20 @@ const women = {
 // console.log(Object.keys(women))
 // console.log(Object.values(women))
 
-const obj1 ={1:"a",2:"b",3:"c"};
-const obj2 = {4:"d",5:"e",6:"f"};
-const obj3 = {...obj1,...obj2};
-console.log(obj3)
- const obj4 = Object.assign({},obj1,obj2);
- console.log(obj4);
+// const obj1 ={1:"a",2:"b",3:"c"};
+// const obj2 = {4:"d",5:"e",6:"f"};
+// const obj3 = {...obj1,...obj2};
+// console.log(obj3)
+//  const obj4 = Object.assign({},obj1,obj2);
+//  console.log(obj4);
+
+
+ // object destructuring
+ const course = { 
+    c_name: "full stack",
+    c_duration: "6 months",
+    c_fee: 5000,
+    c_instructor: "manikantasai"
+ }
+ const {c_name:n} = course;
+    console.log(n)
