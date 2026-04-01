@@ -27,4 +27,37 @@ let sum = addThreenum(20,30,40)
 // console.log(logined());
 function logined(username ="MANI"){ 
 }
-console.log(logined("PRANNY"));// HERE we are passing an argument "PRANNY" to the function, so it will override the default value and return "PRANNY is logged in".
+//console.log(logined("PRANNY"));// HERE we are passing an argument "PRANNY" to the function, so it will override the default value and return "PRANNY is logged in".
+
+// function cartAdd(...num){// here we are using the rest parameter syntax (...num) to allow the function to accept an indefinite number of arguments as an array. The num parameter will be an array containing all the arguments passed to the function.
+//     console.log(num)
+
+// }
+// cartAdd(5,6,7)
+
+// function cartAdd(val1,val2,val3,...num){// here first three parameters (val1, val2, val3) will take the first three arguments passed to the function, and the rest parameter (...num) will take the remaining arguments as an array.
+//     console.log(num)
+
+
+// }
+// cartAdd(5,6,7,8,9,10)
+
+const user = {
+    name:"MANIKANTASAI",
+    age: 25
+    
+}
+
+function handleObject(anyObject) {
+    console.log(`Hii !, my name is ${anyObject.name} and my age is ${anyObject.age}`)
+}
+
+// handleObject(user)
+const ArrayOfObjects = [1,8,20,60,100]
+function handleArray(arr){
+    return arr[3]
+}
+
+let result = handleArray(ArrayOfObjects)
+//console.log(result)
+console.log(handleArray([10,20,30,40,50]))
