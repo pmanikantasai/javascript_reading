@@ -44,3 +44,9 @@ switch(month){
 //  if we don't use break, the code will continue to execute the next case, 
 // even if the condition is not met. 
 // This is called "fall through" and can lead to unexpected results.
+
+
+// null coalescing operator (??) - it is used to provide a default value when the left-hand side is null or undefined
+const vall=10
+const res= null ?? 20?? vall
+console.log(res) // this will print 10 because the left-hand side is null, so the right-hand side is returned

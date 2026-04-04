@@ -43,6 +43,14 @@
 //     console.log("f")
 // }
 
+//nested if statements - an if statement inside another if statement
+// const num = 10;
+// if (num >0){
+//     if (num %2==0){
+//         console.log("number is positive and even");
+//     }
+// }
+
 // and ,or operators
 
 // and operator (&&) - both conditions must be true
@@ -72,9 +80,16 @@
 //     console.log("email is invalid");
 // }
 
-const email = ""
-if (email){
-    console.log("email is valid");
-}else {
-    console.log("email is invalid");
-}
+// const email = ""
+// if (email){
+//     console.log("email is valid");
+// }else {
+//     console.log("email is invalid");
+// }
+
+// ternary operator - it is a short hand if statement, it is used to assign a value based on a condition
+// condition ? true : false
+// const age =18
+// age ==18 ? console.log("hii"):console.log("hello") // this will print "hii" because the condition is true, if we change the condition to age >18, 
+// it will print "hello" because the condition is false
+
