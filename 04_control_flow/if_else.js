@@ -53,7 +53,28 @@
 // }
 
 // or operator (||) - at least one condition must be true
-const num =10
-if (num>5 || num >20){// this condition is true because num is greater than 5, even though it is not greater than 20
-    console.log("number is greater than 5 or 20");
+// const num =10
+// if (num>5 || num >20){// this condition is true because num is greater than 5, even though it is not greater than 20
+//     console.log("number is greater than 5 or 20");
+// }
+
+// truthy and falsy values
+// truthy values - values that are considered true in a boolean context
+// falsy values - values that are considered false in a boolean context
+
+// falsy values: false, 0, "", null, undefined, NaN
+// truthy values: all values that are not falsy
+
+//const email = "pallapu@gmail.com"
+// if (email){
+//     console.log("email is valid");
+// }else {
+//     console.log("email is invalid");
+// }
+
+const email = ""
+if (email){
+    console.log("email is valid");
+}else {
+    console.log("email is invalid");
 }
