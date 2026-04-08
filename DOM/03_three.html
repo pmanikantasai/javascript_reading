@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create the element</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className="mani"
+    div.id="210"
+    div.setAttribute("title","nothing")
+    div.style.backgroundColor ="green"
+    div.style.borderRadius="10px"
+    div.style.padding="10px"
+    // div.innerText="mani HII !!!"
+    const main =document.createTextNode("my name is mani")
+    //console.log(main)
+    div.appendChild(main)
+
+    document.body.appendChild(div)
+
+
+</script>
+</html>
