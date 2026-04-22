@@ -11,12 +11,37 @@
     <button id="stop">stop</button>
 </body>
 <script>
-    const str = function(){
-        console.log("manikantasai",Date.now());
-    }
-    //setInterval(str,1000)
-    let man = document.querySelector('#start').addEventListener('click',str);
-    setInterval(man,1000)
+    // const str = function(){
+    //     console.log("manikantasai",Date.now());
+    // }
+    // //setInterval(str,1000)
+    // let man = document.querySelector('#start').addEventListener('click',str);
+    // setInterval(man,1000)
+
+    //------------------------------------------//
+    // genrate the random color
+
+    let interval
+    const colors= function(){
+        let color ='#'
+        let hexCode='0123456789ABCDEF'
+        for (let i = 0;i < 6;i++) {
+            color += hexCode[Math.floor(Math.random()*16)]
+        }
+    return color
+    };
+    let startingcolor = function (){
+        let coloring = function (){
+            document.body.style.backgroundColor=colors(); 
+        }
+        interval = setInterval(coloring,1000) 
+    };
+    const stopcoloring = function (){
+        clearInterval(interval)
+    };
+
+    document.querySelector('#start').addEventListener('click',startingcolor);
+    document.querySelector('#stop').addEventListener('click',stopcoloring);
 
 </script>
 </html>
